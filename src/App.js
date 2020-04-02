@@ -18,7 +18,6 @@ import { checkUserSession } from "./redux/user/user.actions";
 import { GlobalStyle } from "./global.styles";
 
 const App = ({checkUserSession, currentUser}) => {
-  // unsubscribeFromAuth = null;
   useEffect(() => {
     checkUserSession();
   }, [checkUserSession]);
